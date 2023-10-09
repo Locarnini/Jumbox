@@ -8,6 +8,8 @@ public class Main {
 
 
 		JOptionPane.showMessageDialog(null, "prueba02");
+		JOptionPane.showMessageDialog(null, "prueba1000");
+
 
 	}
 

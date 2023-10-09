@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 
 import Datos.Persona;
 
-public class Validador {
+public class Validador {/*
 
 	Persona Verificador = new Persona();
 	
@@ -95,7 +95,7 @@ public boolean ValidarEliminar(String dni) {
 			
 			return true;
 		}
-	}
+	}*/
 	}
 	//Creo una funcion nueva, le pido nombre y dni, valido que sean iguales 
 	//devuelvo true en el caso de que sean iguales

@@ -14,7 +14,7 @@ public class Conexion {
 			Class.forName("com.mysql.jdbc.Driver");
 			
 			
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/alohanet","root","");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jumbox","root","");
 			//JOptionPane.showMessageDialog(null, "se conecto");
 		} catch (Exception e) {
 	

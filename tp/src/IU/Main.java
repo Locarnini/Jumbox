@@ -9,7 +9,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Validador interfaz = new Validador();
+/*		Validador interfaz = new Validador();
 
 		int repetirLogin = 0;
 		boolean validador =true;
@@ -108,7 +108,7 @@ public class Main {
 			}
 
 		} while (!opcion.equals("Salir"));
-
+*/
 	}
 
 }

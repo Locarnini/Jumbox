@@ -5,14 +5,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.LinkedList;
 
-public class Persona {
+public class Usuario {
 
 	private String nombre;
 	private String apellido;
 	private String dni;
 	private int rol;
 
-	public Persona(String nombre, String apellido, String dni, int rol) {
+	public Usuario(String nombre, String apellido, String dni, int rol) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -20,7 +20,7 @@ public class Persona {
 		this.rol = rol;
 	}
 
-	public Persona() {
+	public Usuario() {
 
 	}
 
@@ -93,8 +93,8 @@ public class Persona {
 
 	}
 
-	public LinkedList<Persona> Mostrar() {
-		LinkedList<Persona> personas = new LinkedList<Persona>();
+	public LinkedList<Usuario> Mostrar() {
+		LinkedList<Usuario> personas = new LinkedList<Usuario>();
 		String sql = "SELECT * FROM `persona` WHERE 1";
 
 		String[] datos = new String[4];
@@ -109,7 +109,7 @@ public class Persona {
 				datos[1] = resultados.getString(2);
 				datos[2] = resultados.getString(3);
 				datos[3] = resultados.getString(4);
-				personas.add(new Persona(datos[0], datos[1], datos[2], Integer.parseInt(datos[3])));
+				personas.add(new Usuario(datos[0], datos[1], datos[2], Integer.parseInt(datos[3])));
 			}
 			if (personas.isEmpty()) {
 
@@ -160,7 +160,7 @@ public class Persona {
 
 	@Override
 	public String toString() {
-		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", rol=" + rol + "]";
+		return "Usuario [nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", rol=" + rol + "]";
 	}
 
 }

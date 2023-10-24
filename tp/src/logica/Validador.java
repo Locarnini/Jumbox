@@ -1,14 +1,14 @@
-package negocios;
+package logica;
 
 import java.util.LinkedList;
 
 import javax.swing.JOptionPane;
 
-import datos.Persona;
+import datos.Usuario;
 
 public class Validador {
 
-	Persona Verificador = new Persona();
+	Usuario Verificador = new Usuario();
 
 	public boolean ValidarIngreso(String nombre, String apellido, String dni, int rol) {
 
@@ -64,7 +64,7 @@ public class Validador {
 
 	}
 
-	public LinkedList<Persona> Mostrar() {
+	public LinkedList<Usuario> Mostrar() {
 
 		return Verificador.Mostrar();
 	}
@@ -77,7 +77,7 @@ public class Validador {
 
 		} else {
 
-			for (Persona persona : Verificador.Mostrar()) {
+			for (Usuario persona : Verificador.Mostrar()) {
 
 				if (nombre.equals(persona.getNombre()) && dni.equals(persona.getDni()))
 

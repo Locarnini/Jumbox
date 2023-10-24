@@ -9,6 +9,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		JOptionPane.showMessageDialog(null, "HOLAAAAAAAAAAAAAAAA");
 		Validador interfaz = new Validador();
 
 		int repetirLogin = 0;
